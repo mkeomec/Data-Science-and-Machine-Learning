@@ -19,9 +19,22 @@ print(stock.matrix)
 
 mat <- matrix(1:25,byrow=T,nrow=5)
 mat*2
-Mat/2
+mat/2
 1/mat
 mat>15
 mat[mat>15]
 mat+mat
 mat%*%mat
+
+
+# Matrix operations
+colSums(stock.matrix)
+rowSums(stock.matrix)
+rowMeans(stock.matrix)
+colMeans(stock.matrix)
+FB <- c(111,112,113,120,145)
+tech.stocks <- rbind(stock.matrix,FB)
+print(tech.stocks)
+avg <- rowMeans(tech.stocks)
+tech.stocks <- cbind(tech.stocks,avg)
+print(tech.stocks)
