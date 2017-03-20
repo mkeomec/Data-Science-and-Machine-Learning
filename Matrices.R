@@ -38,3 +38,43 @@ print(tech.stocks)
 avg <- rowMeans(tech.stocks)
 tech.stocks <- cbind(tech.stocks,avg)
 print(tech.stocks)
+
+# Matrix indexing
+v <- c(1,2,3,4,5)
+v[2]
+mat <- matrix(1:50,byrow=TRUE,nrow=5)
+mat[1,]
+mat[,1]
+mat[1:3,]
+mat[c(1,3),]
+mat[1:2,1:3]
+mat[2:3,5:6]
+
+# Factor and categorical matrices
+animal <- c('d','c','d','c','c')
+id <- c(1,2,3,4,5)
+factor(animal)
+fact.ani <- factor(animal)
+
+#Nominal - no order
+#Ordinal - order
+
+ord.cat <- c('cold','med','hot')
+temps <- c('cold','med','hot','hot','hot','cold','med')
+fact.temp <- factor(temps,ordered = TRUE,levels=c('cold','med','hot'))
+fact.temp
+summary(fact.temp)
+summary(temps)
+
+#R Matrix Exercises
+
+A <- c(1,2,3)
+B <- c(4,5,6)
+rbind(A,B)
+mat <- matrix(1:9,nrow=3)
+is.matrix(mat)
+mat2 <- matrix(1:25,byrow=TRUE,nrow=5)
+mat2
+mat2[2:3,2:3]
+mat2[4:5,4:5]
+matrix(runif(20,min=1,max=100),nrow=4)
