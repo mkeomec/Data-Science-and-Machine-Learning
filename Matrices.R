@@ -77,4 +77,5 @@ mat2 <- matrix(1:25,byrow=TRUE,nrow=5)
 mat2
 mat2[2:3,2:3]
 mat2[4:5,4:5]
+sum(mat2)
 matrix(runif(20,min=1,max=100),nrow=4)
