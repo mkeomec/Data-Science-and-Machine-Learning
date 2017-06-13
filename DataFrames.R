@@ -25,3 +25,6 @@ df[sorted.temp,]
 desc.temp <- order(-df['temp'])
 df[desc.temp,]
 desc.temp <- order(-df$temp)
+desc.temp
+df[desc.temp,]
+desc.temp <- order(-df$temp)
