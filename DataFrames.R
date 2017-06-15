@@ -25,3 +25,6 @@ df[sorted.temp,]
 desc.temp <- order(-df['temp'])
 df[desc.temp,]
 desc.temp <- order(-df$temp)
+
+
+met <- read.csv(file.choose(), header=TRUE)
