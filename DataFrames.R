@@ -25,6 +25,12 @@ df[sorted.temp,]
 desc.temp <- order(-df['temp'])
 df[desc.temp,]
 desc.temp <- order(-df$temp)
+<<<<<<< HEAD
 
 
 met <- read.csv(file.choose(), header=TRUE)
+=======
+desc.temp
+df[desc.temp,]
+desc.temp <- order(-df$temp)
+>>>>>>> origin/master
