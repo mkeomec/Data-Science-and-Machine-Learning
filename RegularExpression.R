@@ -28,3 +28,7 @@ as.Date("June,01,2002",format="%B,%d,%Y")
 
 as.POSIXct("11:02:03",format="%H:%M:%S")
 #strptime
+
+help(strptime)
+
+strptime("11:02:03",format="%H:%M:%S")
