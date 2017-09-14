@@ -47,4 +47,13 @@ df <- mtcars
 # Nesting Hard to read and messy to interpret. Have to read from the inside out
 result <- arrange(sample_n(filter(df,mpg>20),size=5),desc(mpg))
 
+#multiple assignments
+a <- filter(df,mpg>20)
+b <- sample_n(a,size=5)
+results <- arrange(b,desc(mpg))
+
+#pipe operator
+#data %>% op1 %>% op2 %>% op3
+
+result <- df %>% filter(mpg>20) %>% sample_n(size=5) %>% arrange(desc(mpg))
 
