@@ -30,4 +30,10 @@ as.POSIXct("11:02:03",format="%H:%M:%S")
 
 #strptime
 
+<<<<<<< HEAD
 
+=======
+help(strptime)
+
+strptime("11:02:03",format="%H:%M:%S")
+>>>>>>> origin/master
