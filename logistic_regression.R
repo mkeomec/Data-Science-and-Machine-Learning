@@ -3,6 +3,8 @@
 # confusion matrix
 install.packages('Amelia')
 library(Amelia)
+
+setwd("C:/Users/cwbishop/Documents/dropbox/Dropbox/Work/Data-learn/R-for-Data-Science-and-Machine-Learning/Machine Learning with R")
 df.train <- read.csv('titanic_train.csv')
 head(df.train)
 str(df.train)
@@ -79,3 +81,4 @@ misClassError
 1-misClassError
 #create confusion matrix
 table(final.test$Survived,fitted.probabilities>0.5)
+
