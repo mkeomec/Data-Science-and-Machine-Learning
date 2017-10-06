@@ -5,6 +5,7 @@ install.packages('Amelia')
 library(Amelia)
 
 setwd("C:/Users/cwbishop/Documents/dropbox/Dropbox/Work/Data-learn/R-for-Data-Science-and-Machine-Learning/Machine Learning with R")
+setwd("C:/Users/ML/Dropbox/Work//Data-learn/R-for-Data-Science-and-Machine-Learning/Machine Learning with R")
 df.train <- read.csv('titanic_train.csv')
 head(df.train)
 str(df.train)
