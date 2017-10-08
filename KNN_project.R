@@ -1,5 +1,9 @@
 library(ISLR)
 head(iris)
 str(iris)
-var
-standardized.iris <- scale(iris[,1])
+var(iris[,1])
+var(iris[,2])
+standardized.iris <- scale(iris)
+head(standardized.iris)
+var(standardized.iris[,1])
+var(standardized.iris[,2])
